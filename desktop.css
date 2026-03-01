@@ -14,6 +14,9 @@
     display: flex;
     justify-content: space-between;
   }
+  .katalog_container.icon_boks:hover {
+    background-color: #ebba1a;
+  }
   input {
     width: 760px;
   }
@@ -21,8 +24,9 @@
     margin: 0;
   }
   main {
-    width: 1440px;
+    width: 1280px;
     margin: 0 auto;
+    overflow-x: hidden;
   }
   .boks {
     width: 1280px;
@@ -88,13 +92,12 @@
 
   h2 {
     font-size: 32px;
-    padding-left: 80px;
   }
   .catalog_boks {
     width: 1280px;
     justify-content: center;
     overflow-x: hidden;
-    margin: 0 auto;
+    padding: 0;
   }
   .catalog_card {
     width: 200px;
@@ -113,17 +116,32 @@
     position: relative;
   }
   .catalog_card p {
-    padding-top: 12px;
+    margin-top: 12px;
   }
   .katalog_scroll {
     position: absolute;
-    right: 80px;
+    right: 0;
     top: 74px;
   }
   /*            АКЦИИ            */
   .akcion_boks {
     overflow-x: hidden;
+    padding-top: 10px;
+  }
+  .akcion_boks_phone {
+    display: none;
+  }
+  .akcion_boks_desktop {
+    display: flex;
+    justify-content: space-between;
     gap: 20px;
+    position: relative;
+  }
+  .akcion_scroll {
+    display: block;
+    position: absolute;
+    right: 110px;
+    top: 240px;
   }
   .akcion_card {
     width: 215px;
@@ -131,22 +149,17 @@
   .akcion_card_pic {
     padding: 24px 24px 0 24px;
   }
-  .akcion_card_pic_phone {
-    display: none;
-  }
-  .akcion_card_pic_desktop {
-    display: block;
-  }
   .descr {
-    font-size: 32px;
+    font-size: 20px;
+    margin-left: 24px;
   }
   .img_carusel {
-    padding: 12px 0 20px 0;
+    margin: 12px 0 20px 0;
     gap: 6px;
   }
   .price_boks {
     font-size: 14px;
-    padding-top: 16px;
+    margin: 16px 24px 0 24px;
   }
   .price {
     font-size: 20px;
@@ -154,6 +167,18 @@
   .button {
     width: 165px;
     padding: 14px 49px;
-    margin: 20px 26px 24px 26px;
+    margin: 20px 26.5px 24px 26.5px;
+  }
+  .ckidka {
+    padding: 12px 13px;
+    right: 22px;
+    margin-top: 24px;
+  }
+  .statys {
+    padding: 12px 0;
+    margin: 16px 26px 0 26px;
+  }
+  footer {
+    display: none;
   }
 }

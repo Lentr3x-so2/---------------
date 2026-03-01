@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: aqua;
+}
+.box {
+  width: 600px;
+  height: 400px;
+  margin: 0 auto;
+  background-color: blueviolet;
+  overflow-x: hidden;
+}
+.box_2 {
+  background-color: bisque;
+  width: 400px;
+  height: 200px;
+  transform: translateX(-350px);
+  transition: all 0.5s linear;
+}
+.box_2 p {
+  text-align: right;
+}
+.box_2 ul {
+  list-style: circle;
+}
+.box_2:hover {
+  transform: translateX(0);
+  transition: all 0.2s linear;
+}
+.rotate {
+  background-color: brown;
+  font-size: xx-large;
+  padding: 20px;
+  transform: rotate(0);
+  width: fit-content;
+}
+.rotate:hover {
+  transition: all 1s ease;
+  transform: rotate(270deg);
+}
