@@ -22,6 +22,7 @@
   }
   .logo {
     margin: 0;
+    display: block;
   }
   main {
     width: 1280px;
