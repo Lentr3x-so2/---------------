@@ -9,13 +9,26 @@
     align-items: center;
   }
   nav {
-    position: static;
+    position: relative;
     width: 230px;
     display: flex;
     justify-content: space-between;
+    background-color: white;
   }
-  .katalog_container.icon_boks:hover {
-    background-color: #ebba1a;
+  .icon_boks:hover + .katalog_container_panel {
+    background-color: aqua;
+    top: 58px;
+    z-index: 1;
+  }
+  ul {
+    list-style: none;
+  }
+  .katalog_container_panel {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: all 1s ease;
   }
   input {
     width: 760px;
@@ -98,7 +111,6 @@
     width: 1280px;
     justify-content: center;
     overflow-x: hidden;
-    padding: 0;
   }
   .catalog_card {
     width: 200px;
@@ -181,5 +193,8 @@
   }
   footer {
     display: none;
+  }
+  .hr_desktop {
+    display: block;
   }
 }
