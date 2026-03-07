@@ -228,6 +228,10 @@ footer {
   gap: 8px;
   align-items: center;
   color: #454545;
+  transition: transform 0.3s ease;
+}
+.icon_boks:hover {
+  transform: scale(1.1);
 }
 
 .icon_boks p {
